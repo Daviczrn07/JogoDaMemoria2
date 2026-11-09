@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Jogo da Memória - Elementos</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1>🌎 Jogo da Memória</h1>
+            <p>Encontre os pares dos elementos da natureza!</p>
+        </header>
+
+        <!-- PAINEL -->
+        <section class="painel">
+
+            <div class="painel-item">
+                <h3>🎯 Jogadas</h3>
+                <span id="jogadas">0</span>
+            </div>
+
+            <div class="painel-item">
+                <h3>🏆 Pares</h3>
+                <span id="pares">0/6</span>
+            </div>
+
+            <div class="painel-item">
+                <h3>⏱️ Tempo</h3>
+                <span id="tempo">00:00</span>
+            </div>
+
+        </section>
+
+        <!-- TABULEIRO -->
+        <main class="tabuleiro" id="tabuleiro"></main>
+
+        <!-- MENSAGEM DE VITÓRIA -->
+        <section class="mensagem" id="mensagem">
+            <h2>🎉 Parabéns! Você venceu!</h2>
+            <p>Você encontrou todos os pares!</p>
+            <p id="resultadoTempo"></p>
+            <p id="resultadoJogadas"></p>
+        </section>
+
+        <!-- BOTÃO REINICIAR -->
+        <button class="btn-reiniciar" onclick="reiniciarJogo()">
+            🔄 Reiniciar
+        </button>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
